@@ -1,0 +1,15 @@
+torchrun --standalone --nproc_per_node 4 torchrun_main_DDP.py \
+    --model_name low-rank \
+    --model_config configs/llama_60m.json \
+    --lr 0.0015 \
+    --peft_model low-rank \
+    --optimizer adamw\ \
+    --rank 128 \
+    --lora_alpha 32 \
+    --batch_size 128 \
+    --total_batch_size 512 \
+    --num_training_steps 11000 \
+    --warmup_steps 1100 \
+    --weight_decay 0 \
+    --dtype bfloat16 \
+    --eval_every 1000 \
