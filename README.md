@@ -1,6 +1,10 @@
-# Parameter-Efficient Pretraining
+# Scalable Parameter and Memory Efficient Pretraining for LLM: Recent Algorithmic Advances and Benchmarking
 
-This repository implements various parameter-efficient pretraining methods for large language models. It provides a unified framework for experimenting with different optimization algorithms and techniques for efficient training.
+<a href="https://arxiv.org/abs/2505.22922">
+  <img src="https://img.shields.io/static/v1?label=arXiv&message=2505.22922&color=b31b1b" />
+</a>
+
+This repository contains the code accompanying our paper [Scalable Parameter and Memory Efficient Pretraining for LLM: Recent Algorithmic Advances and Benchmarking](https://arxiv.org/abs/2505.22922).  It includes implementations of various parameter and memory efficient pretraining methods for large language models. It provides a unified framework for experimenting with different optimization algorithms and techniques for efficient pretraining.
 
 ## Installation
 
@@ -94,3 +98,15 @@ To use a different model size, simply change the configuration file in your scri
 ```
 
 To experiment with different algorithms, modify the `--peft_model` parameter to one of the supported algorithms and configure any algorithm-specific parameters as needed.
+
+### Citation
+
+If you find this work useful for your research, please cite our paper:
+```bibtex
+@article{glentis2025scalable,
+  title={Scalable Parameter and Memory Efficient Pretraining for LLM: Recent Algorithmic Advances and Benchmarking},
+  author={Glentis, Athanasios and Li, Jiaxiang and Shang, Qiulin and Han, Andi and Tsaknakis, Ioannis and Wei, Quan and Hong, Mingyi},
+  journal={arXiv preprint arXiv:2505.22922},
+  year={2025}
+}
+```
