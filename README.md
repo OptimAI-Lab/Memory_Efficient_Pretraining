@@ -40,17 +40,17 @@ bash scripts/60m_low_rank.sh
 
 This repository implements the following training methods:
 
-1. **AdamW**
-2. **Apollo**
-3. **FIRA**
-4. **Galore**
-5. **Golore**
-6. **LoRO**
-7. **Low-Rank**
-8. **ReLoRA**
-9. **SLTrain**
-10. **SPAM**
-11. **Stable SPAM**
+1. [Adam](https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html)
+2. [Apollo](https://github.com/zhuhanqing/APOLLO)
+3. [FIRA](https://github.com/xichen-fy/Fira)
+4. [GaLore](https://github.com/jiaweizzhao/GaLore) 
+5. [Golore](https://github.com/pkumelon/golore)
+6. [LoRO](https://github.com/mzf666/LORO-main)
+7. Low-Rank
+8. [ReLoRA](https://github.com/Guitaricet/relora)
+9. [SLTrain](https://github.com/andyjm3/SLTrain)
+10. [SPAM](https://github.com/TianjinYellow/SPAM-Optimizer)
+11. [Stable SPAM](https://github.com/TianjinYellow/StableSPAM)
 
 ## Usage
 
