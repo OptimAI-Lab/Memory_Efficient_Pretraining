@@ -3,8 +3,6 @@ import time
 import json
 import random
 
-import numpy as np
-
 import torch
 import torch.nn as nn
 import torch.utils.data
@@ -23,13 +21,8 @@ from loguru import logger
 
 from para_eff_pt.peft_pretraining import training_utils
 from para_eff_pt.peft_pretraining.dataloader import PreprocessedIterableDataset, PreprocessedIterableDataset_noslice
-
-
 from para_eff_pt.peft_pretraining.dataloader_v2 import PreprocessedIterableDataset_v2
-
-
 from para_eff_pt.peft_pretraining.modeling_llama import LlamaForCausalLM
-
 
 from para_eff_pt.pt_sltrain import *
 from para_eff_pt.pt_low_rank.low_rank_model import *
@@ -37,7 +30,7 @@ from para_eff_pt.pt_low_rank.low_rank_model import *
 from para_eff_pt.utils.train_utils import *
 from para_eff_pt.utils.args import parse_args
  
- 
+import numpy as np
 
 transformers.logging.set_verbosity_error()
 torch.backends.cuda.enable_mem_efficient_sdp(False)
