@@ -441,8 +441,7 @@ def main(args):
         logger.info("*" * 40)
         logger.info(f"Loading model from {args.continue_from}")
         checkpoint_path = os.path.join(args.continue_from, "pytorch_model.bin")
-        
-        # !!!!
+       
         if not os.path.exists(checkpoint_path): #safetensors -> bin  
             safetensors_file = os.path.join(args.continue_from, "model.safetensors")
             state_dict = load_file(safetensors_file)
