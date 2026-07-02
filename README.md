@@ -99,6 +99,9 @@ To use a different model size, simply change the configuration file in your scri
 
 To experiment with different algorithms, modify the `--peft_model` parameter to one of the supported algorithms and configure any algorithm-specific parameters as needed.
 
+### Acknowledgement
+This main training framework is adapted from [Galore](https://github.com/jiaweizzhao/GaLore) and [SLTrain](https://github.com/andyjm3/SLTrain).
+
 ### Citation
 
 If you find this work useful for your research, please cite our paper:
